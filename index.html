@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <title>Tower Of Hanoi</title>
+    
+    <script type="module" crossorigin src="/assets/index.5c647134.js"></script>
+    <link rel="stylesheet" href="/assets/index.b00f60a0.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Towers of Hanoi</h1>
+      <div id="row-buttons" class="row"></div>
+      <h4>(Disk number between 3-9)</h4>
+    </header>
+    <main class="main container">
+      <div id="rod-container--1" class="rod-container">
+        <h2>Rod 1</h2>
+        <div id="rod--1" class="rod"></div>
+      </div>
+      <div id="rod-container--2" class="rod-container">
+        <h2>Rod 2</h2>
+        <div id="rod--2" class="rod"></div>
+      </div>
+      <div id="rod-container--3" class="rod-container">
+        <h2>Rod 3</h2>
+        <div id="rod--3" class="rod"></div>
+      </div>
+    </main>
+    <footer class="footer container">
+      <div class="footer-container">
+        <button class="button-container">
+          <h4>Remaining Time</h4>
+          <b id="time-counter">0 seconds</b>
+        </button>
+      </div>
+      <div class="footer-container">
+        <button id="play-again" class="button-container">
+          <h3>Play Again</h3>
+        </button>
+      </div>
+      <div class="footer-container">
+        <button class="button-container">
+          <h4>Moves</h4>
+          <b id="moves-counter">0</b>
+        </button>
+      </div>
+    </footer>
+    <dialog id="confirm-dialog" class="dialog">
+      <div class="dialog-extra">
+        <div class="dialog-container">
+          <div id="dialog-header" class="dialog-header">
+            <h4>Game Status</h4>
+          </div>
+          <hr />
+
+          <h1 id="dialog-message">Congratulations, You Won!</h1>
+          <hr />
+          <form method="dialog">
+            <div class="dialog-buttons">
+              <button id="cancelButton" value="cancel">
+                <h4 id="cancelButton-h4">Close</h4>
+              </button>
+              <button id="confirmButton" value="default">
+                <h4>Play Again</h4>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
